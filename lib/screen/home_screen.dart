@@ -4,7 +4,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 final homeUri = Uri.parse('https://velog.io/@songcoding/posts');//내가 보여주고자 하는 웹의 uri
 class HomeScreen extends StatelessWidget {
   WebViewController controller = WebViewController()
-  ..setJavaScriptMode(JavaScriptMode.unrestricted)// 자바 스크립트 모드 활성화 시키는 코드 안드로이드에서 웹의 기능들을 사용하고 싶을때
+  ..setJavaScriptMode(JavaScriptMode.unrestricted)// 자바 스크립트 모드 활성화 시키는 코드 안드로이드에서 웹의
      ..loadRequest(homeUri);//loadRequest 함수를 실행하면 위에서 입력한 homeUri를 실핼 할 수있습니다.
 
 
